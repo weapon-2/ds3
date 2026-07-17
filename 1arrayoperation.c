@@ -4,9 +4,9 @@
 int main() 
 { 
     int arr[100], n, i; 
-    int pos, value, key; 
+    int pos, value, key;
+	clrscr();
  
-    // Read array elements 
     printf("Enter number of elements: "); 
     scanf("%d", &n); 
  
@@ -15,15 +15,13 @@ int main()
     { 
         scanf("%d", &arr[i]); 
     } 
- 
-    // Display array 
+
     printf("\nArray Elements: "); 
     for(i = 0; i < n; i++) 
     { 
         printf("%d ", arr[i]); 
     } 
  
-    // Insertion 
     printf("\n\nEnter position to insert (0 to %d): ", n); 
     scanf("%d", &pos); 
  
@@ -42,8 +40,7 @@ int main()
     { 
         printf("%d ", arr[i]); 
     } 
- 
-    // Deletion 
+
     printf("\n\nEnter position to delete (0 to %d): ", n - 1); 
     scanf("%d", &pos); 
  
@@ -58,9 +55,7 @@ int main()
     for(i = 0; i < n; i++) 
     { 
         printf("%d ", arr[i]); 
-    } 
- 
-    // Searching 
+    }
     printf("\n\nEnter element to search: "); 
     scanf("%d", &key); 
  
