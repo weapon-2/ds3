@@ -1,5 +1,6 @@
 #include <stdio.h> 
 #include <ctype.h> 
+#include <conio.h>
  
 int main() 
 { 
@@ -16,13 +17,11 @@ int main()
     { 
         char ch = postfix[i]; 
  
-        // If operand → push to stack 
         if(isdigit(ch)) 
         { 
             stack[++top] = ch - '0';    
         } 
  
-        // If operator → pop two elements 
         else 
         { 
             op2 = stack[top--]; 
@@ -36,7 +35,7 @@ int main()
  
                 case '-': 
                     result = op1 - op2; 
- break; 
+                    break; 
  
                 case '*': 
                     result = op1 * op2; 
@@ -53,5 +52,6 @@ int main()
  
     printf("Result = %d\n", stack[top]); 
  
-    return 0; 
+ getch();   
+ return 0; 
 } 
