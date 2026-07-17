@@ -1,10 +1,10 @@
-#include <stdio.h> 
- 
+#include <stdio.h>
+#include <conio.h> 
 int main() 
 { 
     int stack[5]; 
     int top = -1; 
- 
+    clrscr();
     int choice, item, i; 
  
     do 
@@ -20,7 +20,7 @@ int main()
  
         switch (choice) 
         { 
-            case 1:   // Push 
+            case 1:   
  
                 if (top == 4) 
                 { 
@@ -37,7 +37,7 @@ int main()
  
                 break; 
  
-            case 2:   // Pop 
+            case 2:  
  
                 if (top == -1) 
  { 
@@ -51,7 +51,7 @@ int main()
  
                 break; 
  
-            case 3:   // Peek 
+            case 3:
  
                 if (top == -1) 
                 { 
@@ -64,7 +64,7 @@ int main()
  
                 break; 
  
-            case 4:   // Display 
+            case 4:   
  
                 if (top == -1) 
                 { 
@@ -92,7 +92,7 @@ int main()
         } 
  
     } while (choice != 5); 
- 
+    getch();
     return 0; 
 }
 
