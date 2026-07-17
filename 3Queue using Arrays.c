@@ -1,5 +1,5 @@
 #include <stdio.h> 
- 
+#include <conio.h>
 int main() 
 { 
     int queue[5]; 
@@ -20,7 +20,7 @@ int main()
  
         switch(choice) 
         { 
-            case 1:   // Enqueue 
+            case 1: 
                 if(rear == 4) 
                 { 
                     printf("Queue Overflow\n"); 
@@ -42,7 +42,7 @@ int main()
                 }
   break; 
  
-            case 2:   // Dequeue 
+            case 2: 
                 if(front == -1 || front > rear) 
                 { 
                     printf("Queue Underflow\n"); 
@@ -54,7 +54,7 @@ int main()
                 } 
                 break; 
  
-            case 3:   // Peek 
+            case 3:   
                 if(front == -1 || front > rear) 
                 { 
                     printf("Queue is empty\n"); 
@@ -65,7 +65,7 @@ int main()
                 } 
                 break; 
  
-            case 4:   // Display 
+            case 4:  
                 if(front == -1 || front > rear) 
                 { 
                     printf("Queue is empty\n"); 
@@ -91,6 +91,6 @@ int main()
         } 
  
     } while(choice != 5); 
- 
+    getch();
     return 0; 
 }
