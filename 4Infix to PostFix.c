@@ -7,7 +7,7 @@ int main()
     char infix[50], postfix[50], stack[50];
     int top = -1;
     int i = 0, j = 0;
-    clrscr();      //to clear  the output screen
+    clrscr();      
     printf("Enter infix expression: ");
     scanf("%s", infix);
 
